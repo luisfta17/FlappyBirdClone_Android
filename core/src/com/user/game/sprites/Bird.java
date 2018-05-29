@@ -24,16 +24,15 @@ public class Bird {
         velocity.scl(1/dt);
     }
 
-    public void jump(){
-        position.add(0, 40, 0);
-    }
-
-
     public Vector3 getPosition() {
         return position;
     }
 
     public Texture getTexture() {
         return bird;
+    }
+
+    public void jump(){
+        velocity.y = 250;
     }
 }
