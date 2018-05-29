@@ -49,4 +49,8 @@ public class Bird {
     public Rectangle getBounds() {
         return bounds;
     }
+
+    public void dispose(){
+        bird.dispose();
+    }
 }
